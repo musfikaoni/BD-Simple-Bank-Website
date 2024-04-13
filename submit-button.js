@@ -1,14 +1,14 @@
 document.getElementById('btn-submit').addEventListener('click', function(){
-    const emailField = document.getElementById('input-field');
-    const email = emailField.ariaValueMax;
+    const inputField = document.getElementById('input-field');
+    const email = inputField.value;
 
-    const  passField = document.getElementById('pass-field');
-    const pass =passField.ariaValueMax;
+    const passField = document.getElementById('pass-field');
+    const pass = passField.value;
 
-    if(email === 'musfika@gmail.com' && pass === 'musu123') {
+    if(email === 'musfika@gmail.com' && pass === 'musu'){
         window.location.href = 'dashboard.html';
     }
     else {
-        alert('"wrong" emaill or password');
+        alert('tui bank dakat');
     }
 })
